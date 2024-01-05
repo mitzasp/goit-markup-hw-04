@@ -54,6 +54,8 @@ img {
   background: var(--white, #fff);
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   width: 1158px;
@@ -145,12 +147,20 @@ img {
 .link:focus {
   color: var(--OCEAN);
 }
-/* Hero Content */
+/* Hero Content - first section */
 .hero-content {
-  background-color: var(--NAVY-BLUE);
+  background-image: url("../images/img-name.jpg");
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0 7),
+    rgba(46, 47, 66, 0.7)
+  );
   padding: 188px 0;
   display: block;
   justify-content: center;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--WHITE);
@@ -184,7 +194,7 @@ img {
 .order-service-button:focus {
   background-color: var(--OCEAN);
 }
-/* About section */
+/* About section - second section */
 .about-section {
   padding: 120px 0;
 }
@@ -226,7 +236,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* What are we doing section */
+/* What are we doing section - third section */
 .what-are-we-doing-section {
   padding-bottom: 120px;
   display: flex;
@@ -252,7 +262,7 @@ img {
 .li.what-are-we-doing-images {
   width: calc((100% - 48px) / 3);
 }
-/* Our team section */
+/* Our team section - fourth section */
 .our-team-section {
   background-color: var(--CLOUD);
   padding: 120px 0;
